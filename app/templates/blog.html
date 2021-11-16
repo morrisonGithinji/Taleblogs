@@ -1,0 +1,77 @@
+{% extends 'base.html'%}
+
+
+{%block content%}
+<div class="row">
+  {%for blog in posts [::-1]%}
+
+  <div class="col-md-8">
+    <h3>{{legend}}</h3>
+    <!-- Jumbotron -->
+<div class="jumbotron text-center">
+
+  <!-- Title -->
+  <h2 class="card-title h2">{{blog.title}}</h2>
+  <!-- Subtitle -->
+  <p class="blue-text my-4 font-weight-bold">Name: {{blog.user.username}}</p>
+
+  <!-- Grid row -->
+  <div class="row d-flex justify-content-center">
+
+    <!-- Grid column -->
+    <div class="col-xl-7 pb-2">
+
+      <p class="card-text">{{blog.post}}</p>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+  <hr class="my-4">
+
+  <div class="pt-2">
+    <a href="{{url_for('main.new_comment', post_id =blog.id)}}"><button class="btn btn-outline-unique waves-effect">Add Comment</button></a>
+    <a href="{{url_for('main.update_post',post_id = blog.id)}}"><button class="btn btn-outline-blue-grey waves-effect">Update</button></a>
+    <a href="{{url_for('main.delete_blog',post_id=blog.id)}}"><button class="btn btn-outline-elegant waves-effect">Delete</button></a>
+</div>
+
+</div>
+<!-- Jumbotron -->
+  </div>
+
+  {%endfor%}
+  <div class="col-md-4">
+    <!-- Card -->
+<div class="card testimonial-card">
+
+  <!-- Background color -->
+  <div class="card-up indigo lighten-1"></div>
+
+  <!-- Avatar -->
+  <!-- <div class="avatar mx-auto white">
+    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle"
+      alt="woman avatar">
+  </div> -->
+
+  <!-- Content -->
+  <div class="card-body">
+    <!-- Name -->
+    <h4 class="card-title">{{quote.author}}</h4>
+    <hr>
+    <!-- Quotation -->
+    <p><i class="fas fa-quote-left"></i> {{quote.quote}}
+    </p>
+    <a href="{{quote.permalink}}"><button class="btn btn-outline-cyan">view more</button></a>
+  </div>
+
+</div>
+<!-- Card -->
+
+  </div>
+</div>
+
+
+{%endblock%}
+
