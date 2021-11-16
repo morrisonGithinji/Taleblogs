@@ -7,7 +7,7 @@ class  UserModelTest(unittest.TestCase):
     self.new_user = User(username='ebay',email='morrison.githinji@student.moringaschool.com',password = '5431140')
     
   def test_check_instance(self):
-    self.assertEquals(self.new_user.username, 'ebay')
+    self.assertEquals(self.new_user.username, 'morrison')
     self.assertEquals(self.new_user.email,'morrison.njenga@student.moringaschool.com')
     self.assertEquals(self.new_user.pass_secure,'5431140')  
     
