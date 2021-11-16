@@ -1,21 +1,65 @@
-# Title: 23 Tales
+### Project-Name
+blogtales
+### Description
+This is a personal blogging website where you can create and share your opinions and other users can read and comment on them
 
-## Description
-23-Tales is a blog application where one can sign in to write blogs which others can read and comment on. A writer can delete comments on their blog-posts. A writer can also update a post or take it ddown at wish.
 
-## Author:
-Ebenezer Gakuo
 
-## Installation:
-For installation:
-Option 1: You can  clone this repository and run the application locally in your machine.
-Option 2: Go to the link in the description
+### Author
+Morrison Njenga
 
-## Technology Used
-The application was created using the python microframework flask
 
-## Licence:
+### Technologies Used
+
+- Python
+- HTML
+- CSS/bootstrap
+- Flask
+- postgresql
+
+
+
+
+##### Setup Instructions and Installation
+
+To run the app in your machine or server,use the following steps:
+
+prerequisite
+1.A text editor preferably visual studio code.
+2.Use a broswer to display the application
+
+
+
+
+## Development
+
+Want to contribute? Great!
+
+To fix a bug or enhance an existing module, follow these steps:
+- Fork the repo
+- Create a new branch (git checkout -b improve-feature)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (git commit -am 'Improve feature')
+- Push to the branch (git push origin improve-feature)
+- Create a Pull Request
+## [Live link]:https://blogtales.herokuapp.com/
+## Known Bugs
+
+There are no known bugs.
+### License
+
  GNU GENERAL PUBLIC LICENSE
- https://raw.githubusercontent.com/Ebay-droid/my-blog/master/LICENSE
+Copyright (c) 2021 **Morrison Njenga**
 
-##
+ The GNU General Public License is a free, copyleft license for
+software and other kinds of works.
+
+  The licenses for most software and other practical works are designed
+to take away your freedom to share and change the works.  By contrast,
+the GNU General Public License is intended to guarantee your freedom to
+share and change all versions of a program--to make sure it remains free
+software for all its users.  We, the Free Software Foundation, use the
+GNU General Public License for most of our software; it applies also to
+any other work released this way by its authors.  You can apply it to
+your programs, too.
