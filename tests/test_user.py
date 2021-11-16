@@ -4,7 +4,7 @@ from app.models import User
 class  UserModelTest(unittest.TestCase):
   
   def setUp(self):
-    self.new_user = User(username='ebay',email='morrison.githinji@student.moringaschool.com',password = '5431140')
+    self.new_user = User(username='morrison',email='morrison.githinji@student.moringaschool.com',password = '5431140')
     
   def test_check_instance(self):
     self.assertEquals(self.new_user.username, 'morrison')
